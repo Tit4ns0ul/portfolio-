@@ -1,145 +1,89 @@
-*{
-    background-color: #0f0f0f ;
-    /* color: white; */
+/* Global Styles */
+* {
+    background-color: #0f0f0f;
+    color: white; /* Default text color */
 }
 
+body {
+    font-family: Arial, sans-serif; /* Default font family */
+    margin: 0; /* Reset default margin */
+}
+
+.container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+/* Navigation Styles */
 nav div a {
     padding: 4px;
-    color: rgb(255, 255, 255) !important;
 }
-.navbar-toggler span{
+
+.navbar-toggler span {
     color: rgb(179, 176, 176);
 }
 
-.about-text, 
-.animated-text, 
-.animated-text 
-#navbarNav,
-span, p,  a, ul, ol, li, 
-div, img, small,
- h1, h2, h3, h4, h5, h6,
- .accordian-item, 
- .accordian-body, 
- address, time
- {
-    background-color: #1f1f1f !important;
-
-}
-
-h1, h2{
-    color: white !important;
-}
-
-.about-image{
-    margin: 30px;
-}
-.about-text a {
-    background-color: #313030 !important;
+/* Content Styles */
+.about-text, .animated-text, #navbarNav, span, p, a, ul, ol, li, div, img, small, h1, h2, h3, h4, h5, h6, .accordian-item, .accordian-body, address, time {
+    background-color: #1f1f1f;
     color: white;
 }
 
-#experiences div{
+.about-image {
+    margin: 30px;
+}
+
+.about-text a {
+    background-color: #313030;
+}
+
+#experiences div, #experiences h3, #experiences ul, #experiences li, #experiences ul a {
     padding: 10px;
-    padding-top: 20px;
+    margin-left: 20px;
+    background-color: #2d2d2d;
 }
 
-#experiences h3{
-    margin-left: 20px;
-    margin-bottom: 20px;
-} 
-#experiences ul{
-    margin-left: 20px;
-    align-items: center;
-    
-}
-#experiences li{
-    align-content: center !important;
-    align-items: center !important;
-    align-self: center !important
-}
-
-#experiences ul a{
+#experiences ul a {
     width: 200px;
-    background-color: #2d2d2d !important;
-    align-items: center !important;
-    align-self: center !important
 }
 
-
-div, .about-image, nav li{
-    /* padding: 15px; */
-    border-radius: 40px !important;   
-}
-.container{
-    
-    /* border-radius: 10px; */
-}
-.about-text{
-    padding: 15px;
-    border-radius: 20px;
-}
-.accordion-flush .accordion-item .accordion-button {
-    border-radius: 10px;
-    background-color: #a36635;
-}
-
-.accordion-button{
-    color: black !important;
-    font-size: 20px;
-    font-weight: 800;
-    box-shadow: none !important;
-}
-
-.accordion-collapsed{
-    margin: 10px;
-}
-
-.separator {
-    border-left: 1px solid #fffcfc !important; /* Adjust color and width as needed */
-    height: 10px; /* Adjust height as needed */
-  }
-  
-.contacts-list a, time, address {
-    color: #fdc563 !important;
-}
-
-.service-list{
-    margin-bottom: 40px !important;
-}
-
-.img-fluid{
-    border: 2px stroke white !important;
-}
-
-.icon-inner{
-    background-color: #a36635 !important;
-}
-
-
-
-
+/* Footer Styles */
 .footer {
-  width: 100%; /* Ensures the footer takes the full width */
-  padding: 20px; /* Adjust padding as needed */
-  margin: 0; /* Removes any default margins */
-  box-sizing: border-box; /* Ensures padding and border are included in the width */
-  background-color: #f8f9fa; /* Change background color as needed */
-}
-
-.footer .container {
-  max-width: 1200px; /* Adjust max-width of the container as needed */
-  margin: 0 auto; /* Centers the container horizontally */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
 }
 
 .footer p {
-  margin-bottom: 10px; /* Adds space between paragraphs */
+    margin-bottom: 10px;
 }
 
 .footer a {
-  color: #007bff; /* Sets link color */
-  text-decoration: none; /* Removes default underline from links */
+    color: #007bff;
 }
 
 .footer a:hover {
-  text-decoration: underline; /* Adds underline on hover for links */
+    text-decoration: underline;
+}
+
+/* Additional Styles */
+.separator {
+    border-left: 1px solid #fffcfc;
+    height: 10px;
+}
+
+.contacts-list a, time, address {
+    color: #fdc563;
+}
+
+.icon-inner {
+    background-color: #a36635;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer p {
+        text-align: center;
+    }
 }
