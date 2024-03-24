@@ -114,3 +114,32 @@ div, .about-image, nav li{
 .icon-inner{
     background-color: #a36635 !important;
 }
+
+
+
+
+.footer {
+  width: 100%; /* Ensures the footer takes the full width */
+  padding: 20px; /* Adjust padding as needed */
+  margin: 0; /* Removes any default margins */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  background-color: #f8f9fa; /* Change background color as needed */
+}
+
+.footer .container {
+  max-width: 1200px; /* Adjust max-width of the container as needed */
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
+.footer p {
+  margin-bottom: 10px; /* Adds space between paragraphs */
+}
+
+.footer a {
+  color: #007bff; /* Sets link color */
+  text-decoration: none; /* Removes default underline from links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Adds underline on hover for links */
+}
