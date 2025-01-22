@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Maven Pro", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
